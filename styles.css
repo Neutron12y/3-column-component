@@ -1,0 +1,193 @@
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 1rem;
+    font-size: 12px;
+   display: flex;
+   align-content: center;
+   place-content: center;
+   min-height: 100vh;
+   background-color: whitesmoke;
+}
+
+.container {
+ display: grid;
+    grid-template-columns: repeat(3, 250px);
+   
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    width: 800px;
+   align-items: center;
+   justify-items: center;
+   place-items: center;
+    z-index:10;
+    padding-left: 2rem;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+   position: relative;
+ 
+}
+
+@media (max-width:800px) {
+    .container {
+        text-align: justify;
+        grid-template-columns: 1fr;
+        width: 350px;
+        margin-right: 2rem;
+       
+    }
+
+    .container .sedams .suvs .luxury {
+        grid-template-rows:3fr;
+    }
+
+    .sedams {
+        border-top-right-radius: 0.5rem;
+        margin-bottom: -.2rem;
+        
+    }
+
+    .suvs {
+
+        margin-bottom: -.2rem;
+    }
+
+    .luxury {
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius:0.5rem;
+        
+    }
+}
+
+ .p-1 {
+    align-items: center;
+ }
+
+h1, p {
+    text-align: justify;
+    margin: 2rem;
+    color: white;
+   
+
+}
+
+h1 {
+    font-size: 24px;
+}
+p {
+    line-height: 2;
+}
+
+
+/*learn below each content circle */
+.learn-1{
+    margin-top: 1rem;
+    border: 0rem;
+    border-radius: 3rem;
+    background-color :white;
+   display: grid;
+    height: 45px;
+width: 120px;
+    justify-content: center;
+    place-items: center;
+    
+    
+    
+}
+.first-learn {
+    color: hsl(31, 77%, 52%);
+    top:0;
+    left:0;
+    right:0;
+    transform: translate(-5%, -80%);
+    text-wrap: nowrap;
+
+}
+
+
+.learn-2{
+    margin-top: 1rem;
+    border: 0rem;
+    border-radius: 3rem;
+    background-color :white;
+   display: grid;
+    height: 45px;
+width: 120px;
+    justify-content: center;
+    place-items: center;
+    
+    
+}
+.second-learn {
+    color: hsl(184, 100%, 22%);
+    top:0;
+    left:0;
+    right:0;
+    transform: translate(-5%, -80%);
+    text-wrap: nowrap;
+
+}
+
+
+.learn-3{
+    margin-top: 1rem;
+    border: 0rem;
+    border-radius: 3rem;
+    background-color :white;
+   display: grid;
+    height: 45px;
+width: 120px;
+    justify-content: center;
+    place-items: center;
+ 
+    
+    
+}
+.third-learn {
+    color:  hsl(179, 100%, 13%);
+    top:0;
+    left:0;
+    right:0;
+    transform: translate(-5%, -80%);
+    text-wrap: nowrap;
+
+}
+
+
+.sedams {
+    display:grid;
+    border: 0;
+    background-color:  hsl(31, 77%, 52%);
+    padding: 2rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    position: relative;
+}
+
+
+
+.suvs {
+    display:grid;
+    border: 0;
+   background-color:hsl(184, 100%, 22%);
+    padding: 2rem;
+    
+}
+
+ .luxury {
+    display:grid;
+    border: 0;
+    background-color: hsl(179, 100%, 13%);
+    padding: 2rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
